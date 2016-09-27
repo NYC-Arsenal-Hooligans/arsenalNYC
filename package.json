@@ -34,6 +34,7 @@
     "path": "^0.12.7",
     "pg-promise": "^5.2.4",
     "rc-dropdown": "^1.4.10",
+    "rc-menu": "^5.0.0",
     "react-dropdown": "^1.1.0",
     "react-router-form": "^1.0.2",
     "reactfire": "^1.0.0"

@@ -46,8 +46,7 @@ export default class App extends React.Component {
         <div className="container">
           {this.props.children && React.cloneElement(this.props.children, {
             changeStatus:this.changeLogInStatus.bind(this),
-            upcomingEvents:this.state.events,
-            listVisible:this.state.listVisible
+            upcomingEvents:this.state.events
             })}
         </div>
         <Features
