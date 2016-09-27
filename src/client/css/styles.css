@@ -109,3 +109,24 @@ footer p {
   color:white;
 }
 
+img {
+  height: 200px;
+  margin-top: -5%;
+  display: inline-block;
+}
+
+.events {
+  height: 150px;
+  width: 65%;
+  background-color: #dddddd;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+.events>div {
+  display: inline-block;
+  margin-left: 5%;
+}
+

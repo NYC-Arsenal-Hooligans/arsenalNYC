@@ -1,6 +1,7 @@
 import React     from 'react';
 import ReactDOM  from 'react-dom'
 import Nav       from './Nav.jsx'
+import Features  from './Features.jsx'
 
 export default class App extends React.Component {
 
@@ -9,7 +10,7 @@ export default class App extends React.Component {
     super();
 
     this.state = {
-      userLoggedIn: false,
+      userLoggedIn: true,
       events: []
     }
   }
@@ -47,6 +48,8 @@ export default class App extends React.Component {
             upcomingEvents:this.state.events
             })}
         </div>
+        <Features
+        upcomingEvents={this.state.events} />
         <pre>{JSON.stringify(this.state, null, 2)}</pre>
       </container>
       )
