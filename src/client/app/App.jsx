@@ -11,7 +11,8 @@ export default class App extends React.Component {
 
     this.state = {
       userLoggedIn: true,
-      events: []
+      events: [],
+      listVisible: false
     }
   }
 
@@ -45,7 +46,8 @@ export default class App extends React.Component {
         <div className="container">
           {this.props.children && React.cloneElement(this.props.children, {
             changeStatus:this.changeLogInStatus.bind(this),
-            upcomingEvents:this.state.events
+            upcomingEvents:this.state.events,
+            listVisible:this.state.listVisible
             })}
         </div>
         <Features

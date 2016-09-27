@@ -12,11 +12,6 @@ const colours = [{
   }];
 
 export default class Dropdown extends React.Component{
-    getInitialState() {
-        return (
-          {listVisible: false}
-        );
-    }
 
     select(item) {
         this.props.selected = item;
@@ -33,8 +28,8 @@ export default class Dropdown extends React.Component{
     }
 
     render() {
-        return <div className={"dropdown-container" + (this.state.listVisible ? " show" : "")}>
-            <div className={"dropdown-display" + (this.state.listVisible ? " clicked": "")} onClick={this.show}>
+        return <div className={"dropdown-container" + (this.props.listVisible ? " show" : "")}>
+            <div className={"dropdown-display" + (this.props.listVisible ? " clicked": "")} onClick={this.show}>
                 <span style={{ color: this.props.selected.hex }}>{this.props.selected.name}</span>
                 <i className="fa fa-angle-down"></i>
             </div>
@@ -56,5 +51,5 @@ export default class Dropdown extends React.Component{
         }
         return items;
     }
-});
+};
 
