@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import NavLink from './NavLink.jsx'
 
 export default function Nav (props) {
 
@@ -15,8 +16,8 @@ export default function Nav (props) {
           </ul>
             </div>
              <ul className="nav navbar-nav navbar-right">
-               <li><Link to="/logout" activeStyle={{ color: 'red' }}>Log Out</Link></li>
-               <li><Link to="/user-profile" activeStyle={{ color: 'red' }}>Profile</Link></li>
+               <li><NavLink onClick={props.changeStatus} to="/" >Log Out</NavLink></li>
+               <li><NavLink to="/user/profile" >Profile</NavLink></li>
              </ul>
          </div>
 
@@ -37,8 +38,8 @@ export default function Nav (props) {
           </ul>
           </div>
            <ul className="nav navbar-nav navbar-right">
-              <li><Link to="/login" activeStyle={{ color: 'red' }}>Login</Link></li>
-              <li><Link to="/create-account" activeStyle={{ color: 'red' }}>Create Account</Link></li>
+              <li><NavLink to="/login" >Login</NavLink></li>
+              <li><NavLink to="/create-user" >Sign Up</NavLink></li>
            </ul>
        </div>
 
