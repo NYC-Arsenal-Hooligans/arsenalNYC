@@ -10,7 +10,7 @@ CREATE TABLE members (
   city TEXT NOT NULL,
   state TEXT NOT NULL,
   zipcode INT NOT NULL,
-  member_id INT NOT NULL,
+  member_id INT NOT NULL DEFAULT now(),
   active BOOLEAN NOT NULL DEFAULT false,
   user_created TIMESTAMP NOT NULL DEFAULT now()
 );
