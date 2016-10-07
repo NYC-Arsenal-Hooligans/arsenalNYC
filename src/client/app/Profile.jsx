@@ -1,4 +1,6 @@
 import React from 'react'
+import Features from  './Features.jsx'
+
 // import Dropdown from 'react-dropdown'
 // import Select from './Select.jsx'
 
@@ -30,15 +32,19 @@ export default class Profile extends React.Component {
       <div>
         <h1 className='heading'>This is the profile page!!</h1>
         <form onSubmit={this.props.onSubmitSearch}>
-          <select className="input-group" >
-            {this.props.upcomingEvents.map((event,i)=>{
-              return (
-                <option key={i} value={event.name}>{event.name} - {event.date}</option>
-                )
-            })}
-          </select>
+
         </form>
+        <Features
+        upcomingEvents={this.props.upcomingEvents} />
       </div>
       )
   }
 }
+
+  // <select className="input-group" >
+  //           {this.props.upcomingEvents.map((event,i)=>{
+  //             return (
+  //               <option key={i} value={event.name}>{event.name} - {event.date}</option>
+  //               )
+  //           })}
+  //         </select>

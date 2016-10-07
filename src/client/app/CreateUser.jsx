@@ -49,10 +49,6 @@ export default class CreateUser extends React.Component {
                 <label type='text'>Previous Member ID</label><br/>
                 <input className='form-control' type="text" name="memberId" placeholder="Previous Member ID"/>
               </div>
-              <div className="form-group">
-                <label type='text'>Birthday</label><br/>
-                <input className='form-control' type="text" name="birthday" placeholder="Birthday" />
-              </div>
               <button className="btn btn-success" type='submit'>Create User</button>
             </Form>
 

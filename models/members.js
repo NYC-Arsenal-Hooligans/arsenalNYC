@@ -1,6 +1,6 @@
-import _db from './connection';
-import bcrypt from 'bcrypt';
-import salt from bcrypt.genSaltSync(10);
+const _db    = require('./connection');
+const bcrypt = require('bcrypt');
+const salt   = bcrypt.genSaltSync(10);
 
 const createSecure = (password) =>
   new Promise((resolve, reject) =>
@@ -12,9 +12,9 @@ const createSecure = (password) =>
   )
 
 module.exports = {
-  listMemebrs (req, res, next){
+  listMembers (req, res, next){
     _db.any(`SELECT * FROM members;`)
-       .then(users => {
+       .then(members => {
         res.members = members;
         next();
        })
@@ -43,7 +43,7 @@ module.exports = {
     })
   },
 
-  creatMember(req, res, next){
+  createMember(req, res, next){
     console.log('=====', req.body)
     createSecure(req.body.password)
     .then(hash => {

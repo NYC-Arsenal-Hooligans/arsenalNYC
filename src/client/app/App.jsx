@@ -1,7 +1,14 @@
 import React     from 'react';
 import ReactDOM  from 'react-dom'
 import Nav       from './Nav.jsx'
-import Features  from './Features.jsx'
+
+const firebase = require("firebase");
+const config = require("../helpers/firebase.json");
+firebase.initializeApp({
+  databaseURL: "https://arsenal-nyc-events.firebaseio.com"
+});
+
+
 
 export default class App extends React.Component {
 
@@ -14,6 +21,8 @@ export default class App extends React.Component {
       events: [],
       listVisible: false
     }
+
+
   }
 
    componentDidMount(){
@@ -49,8 +58,6 @@ export default class App extends React.Component {
             upcomingEvents:this.state.events
             })}
         </div>
-        <Features
-        upcomingEvents={this.state.events} />
         <pre>{JSON.stringify(this.state, null, 2)}</pre>
       </container>
       )
