@@ -4,15 +4,12 @@ import { Button, ButtonToolbar } from 'react-bootstrap';
 
 const GBP = '£';
 
-const memberButtonGroup = (
-        <ButtonToolbar>
-          <Button bsStyle="info">Buy</Button>
-          <Button bsStyle="info">Info</Button>
-        </ButtonToolbar>
+const adminButtonGroup = (
+        <Button>I'm Broken</Button>
 )
 
 
-export default class Features extends React.Component {
+export default class AdminEventFeatures extends React.Component {
 
   render(){
     return(
@@ -27,7 +24,7 @@ export default class Features extends React.Component {
                 <p>{GBP}{event.cost}</p>
               </div>
               <div>
-              {memberButtonGroup}
+               {adminButtonGroup}
               </div>
             </div>
             )

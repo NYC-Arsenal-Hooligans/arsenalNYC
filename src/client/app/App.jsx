@@ -1,12 +1,10 @@
 import React     from 'react';
 import ReactDOM  from 'react-dom'
 import Nav       from './Nav.jsx'
-import Features  from './Features.jsx'
 
 const firebase = require("firebase");
 const config = require("../helpers/firebase.json");
 firebase.initializeApp({
-
   databaseURL: "https://arsenal-nyc-events.firebaseio.com"
 });
 
