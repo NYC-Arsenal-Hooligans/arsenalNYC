@@ -6,20 +6,20 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+
 
   <title>Arsenal NYC</title>
 
-  
-  
 
-  
 
-  
+
+
+
+
   <link href="/css/main.css" rel="stylesheet">
-  
 
-  
+
+
 
 </head>
 <body>
@@ -27,14 +27,17 @@
 
 
 <div id="container"></div>
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
 
-
-
-
-
-
-
-
+<script>
+  var app = firebase.initializeApp({
+    apiKey: "AIzaSyCFY-S8TpPSV6jwa2WeXIjtKklNbNqwGHY",
+    authDomain: "arsenal-nyc-events.firebaseapp.com",
+    databaseURL: "https://arsenal-nyc-events.firebaseio.com",
+    storageBucket: "arsenal-nyc-events.appspot.com",
+    messagingSenderId: "544073222233"
+  });</script>
+  // ...
 
 <script src="/js/main.js"></script>
 

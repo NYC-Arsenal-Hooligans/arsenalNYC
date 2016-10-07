@@ -28,10 +28,16 @@
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "express": "^4.14.0",
+    "firebase": "^3.4.0",
     "jsonwebtoken": "^7.1.6",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
-    "pg-promise": "^5.2.4"
+    "pg-promise": "^5.3.4",
+    "rc-dropdown": "^1.4.10",
+    "rc-menu": "^5.0.0",
+    "react-dropdown": "^1.1.0",
+    "react-router-form": "^1.0.2",
+    "reactfire": "^1.0.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",

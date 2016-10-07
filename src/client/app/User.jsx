@@ -1,7 +1,6 @@
 import React     from 'react';
 import ReactDOM  from 'react-dom'
 import Nav       from './Nav.jsx'
-import Features  from './Features.jsx'
 
 export default class App extends React.Component {
 
@@ -14,17 +13,6 @@ export default class App extends React.Component {
       events: [],
       listVisible: false
     }
-  }
-
-   componentDidMount(){
-    firebase.database().ref('events/').on('value', (snapshot)=> {
-      const currentevents = snapshot.val()
-      if (currentevents != null){
-        this.setState({
-          events: currentevents
-        })
-      }
-    })
   }
 
   changeLogInStatus(){
@@ -49,8 +37,6 @@ export default class App extends React.Component {
             upcomingEvents:this.state.events
             })}
         </div>
-        <Features
-        upcomingEvents={this.state.events} />
         <pre>{JSON.stringify(this.state, null, 2)}</pre>
       </container>
       )
