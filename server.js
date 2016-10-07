@@ -7,6 +7,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const bobbyParser = require('body-parser');
+const bcrypt = require('bcrypt');
 const app = express();
 const port = process.argv[2] || process.env.PORT || 3000;
 const userController = require('./routes/users_controller');

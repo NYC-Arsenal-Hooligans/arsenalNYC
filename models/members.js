@@ -1,6 +1,6 @@
-const _db = require('./connection');
+const _db    = require('./connection');
 const bcrypt = require('bcrypt');
-const salt = bcrypt.genSaltSync(10);
+const salt   = bcrypt.genSaltSync(10);
 
 const createSecure = (password) =>
   new Promise((resolve, reject) =>
