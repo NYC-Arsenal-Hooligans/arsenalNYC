@@ -13,14 +13,17 @@ import LoginUser from './LoginUser.jsx'
 import NotFound from './NotFound.jsx'
 import CreateUser from './CreateUser.jsx'
 import Profile from './Profile.jsx'
+import User from './User.jsx'
 
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path='/' component={App}>
-      <Route path='login' component={LoginUser} />
-      <Route path='create-user' component={CreateUser}/>
+      <Route path='/user' component={User}>
+        <Route path='login' component={LoginUser} />
+        <Route path='create-user' component={CreateUser}/>
+      </Route>
       {/*<Route path='/user/:userId/profile' component={Profile}/>This will be once we actually have users*/}
-      <Route path='/user/profile' component={Profile}/>
+      <Route path='/profile' component={Profile}/>
       <Route path="*" component={NotFound} />
     </Route>
   </Router>
