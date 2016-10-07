@@ -37,11 +37,13 @@ module.exports = {
   module : {
     include: path.join(__dirname, 'src'),
     loaders: [
+      { test: /\.json$/, loader: "json-loader" },
+      {test: /\.js?$/, exclude: /node_modules/, loader: 'babel'},
+       {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'},
       { test: /\.css$/,  loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
       { test: /\.png$/,  loader: 'file-loader?name=/images/[name].[ext]' },
       { test: /\.gif$/,  loader: 'file-loader' },
       { test: /\.jpg$/,  loader: 'file-loader' },
-      { test: /\.jsx?$/, loader: 'babel'       },
       {
         test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader?limit=100&mimetype=application/font-woff&name=/fonts/[name].[ext]'

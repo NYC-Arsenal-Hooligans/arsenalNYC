@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "arsenal-nyc-events",
+  "private_key_id": "00f577bd9a89a440b7bcc686c46d6e90c51ecf51",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDzJiRwriDh1oRt\nPziJiE/lCGCi0n9Bdra1SKEEKZni3vKjz6sFpCxFFLS8sxfcY8mbR2xqRHsne5lJ\nKy9XKVGRhIWbnVpDocRp/7qqVtAADwYguV9Sjx7qYKM47WhDHD7yb84y7bHPL+53\nMgNPyoPCxOg9gWBH+L8zKmGe0jegZMvfc0cssjn1IoHczFtfPUjs1Ul3fbrV8ccJ\nMLqkRzpgIK+haKS0OEGPt9LKIrx4OaiJ9xcuMx1RQC/o3j932vxO4feQnWV+gWIk\n8SpPzZHahPXzaT0ATIjsaoPg32HV0v2mVjBzvUcBBa020XopzME3MLuT/agyeVc9\nhNVBGvNxAgMBAAECggEBAJ9dHoEj/7VFbmJUD3BFAWhxxzSwlmuHrVTAF5is04mY\n6ptnHwaBhep5GcSb9UWjuZ2mgG5eGAHWxq7oOQz9rdKccx19Uo4FVsDKtcOzRnzj\nW/bSyKFJ4M9pK1HCeJWTy8YGdbV3iRTsq3VAOF9xsk5T1IuLYlmJtXeJjZYU3hSm\n9MNktr6CHBGZl43Ru9Ku9brgCzqOBZhezv/cDTSTIEQqqpcnkO+7SV66y0W1mrih\nYfshmKRYtVfbHKEpu7Jq/UF5am51oX976edMubV6FunxrR6TYUwqNSgl+H9rz5wF\ngYbxc7G9qYEkcAE9RmG0YN8Diu6GbBYfTPPMBPCFHokCgYEA/p3F5yPJHoJUxW1L\nOAKO3wnu53W06PiJaZLMrLTfxLQG6K0UrpUI3/jRfENRasImmLok6WINzj7UORlC\ngqd5kDIk1VusgjYKQqidjP23oawzljoDMRgmF/U8G8qJYNZXsWiBCzG3++SS34BY\ntCw6HnFFxNA8cGBCgMiG0CkaaVsCgYEA9HhqbuEnN60Uy2wTaEFtmoURtd7gQ9bH\nJIGKm8Ca9bTO9uWI318JqR6g9AfqPaMS5CigIRpwOek8gj8OPskqP3I/NtQj9tAX\nbFMtDFb8ZFOZaRFZ79OgmUOXiOTa9lrKweYDnePuID40mX6PhLxwWexhXOeHmzp6\nzz0wsry1ZCMCgYBDduCaRxQiPlxh13zHwX3DwWkI8VpXJIucaqZK2L4165GtEzdY\nruqkFdTD/T5UcE8zxpbDNBT+Yg1vd6702ZVPTMoPsnO6KMF9OhpM4mlGsE8W7hYs\nav6k+HjN0FOoUgL4Yf1XTvw2BTGZgPOAAfwAVvkqlhZ9nDPi1b9K5qk14wKBgQDH\ncEkcBdCxqiDxx0yZ2+6nhXGqVpXMojY6QPgsElgYpRXG9ADSgbzm3FbgXmipOhVa\nTw47k08E35L+iqR7ci9mLTUG7NAeNSs2szBoBbrHui/IOGCPt60n+61u/4zmN7F7\nt8MxltYYNcdBha9d0UEzCxVu7m+Bopa35KqK1kqA0wKBgFiGQOq0PLM81q4t0GcH\n12ga8lFs2vQVb4gtwf5xGoMdD2G6IxJ8xfoYG8J9WtyIM0Lj6DOopZUPS+Uzgdr1\nAeSWJQRAdTUhZb9apsOg1OKLVaPJ4tomHfrt8Hkn6kT+doAbp7pqo/PwyXTV4LE7\nDoR22KvxrRycLUm5mH1jmHzo\n-----END PRIVATE KEY-----\n",
+  "client_email": "arsenal-nyc-events@appspot.gserviceaccount.com",
+  "client_id": "106024262270837287065",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/arsenal-nyc-events%40appspot.gserviceaccount.com"
+}
